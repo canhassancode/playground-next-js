@@ -7,7 +7,8 @@ const Hero = () => {
         Introducing the <span className="font-bold">Inn</span>
       </h1>
       <h2 className="font-light text-sm">
-        The home of all things Magic: the Gathering
+        The home of all things{" "}
+        <span className="font-semibold">Magic: the Gathering</span>
       </h2>
     </div>
   );

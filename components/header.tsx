@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import logo from "../public/logo.png";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
-import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -15,56 +14,45 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const cardMap = [
-  {
-    card_name: "gandalf",
-    type: "creature",
-    description: "crazy ass powerful wizard",
-    health: 5,
-    attack: 7,
-    rarity: "legendary",
-  },
-  {
-    card_name: "sauron",
-    type: "creature",
-    description: "crazy ass powerful evil guy",
-    health: 8,
-    attack: 8,
-    rarity: "legendary",
-  },
-];
-
-const Header = (props: string[]) => {
+const Header = () => {
   return (
     <header className="bg-red-500 justify-between flex items-center py-2 pr-8 pl-8 gap-4 h-14">
       <div className="flex jutify-start gap-4 items-center">
-        <div
-          onClick={() => {
-            alert("test");
-          }}
-        >
+        <Link className="cursor-pointer" href="/">
           <Image
-            src={logo}
+            src="/logo.png"
             width={90}
             height={90}
-            className="mr-8 cursor-pointer"
+            className="mr-8 cursor-pointer hover:invert transition"
             alt={""}
           />
-        </div>
-        <Button
-          variant="default"
-          className="w-18 h-9 hover:bg-white hover:text-black"
-        >
-          Home
-        </Button>
-        <Button
-          variant="default"
-          className="w-18 h-9 hover:bg-white hover:text-black"
-        >
-          About
-        </Button>
+        </Link>
+        <Link href="/">
+          <Button
+            variant="default"
+            className="w-18 h-9 hover:bg-white hover:text-black"
+          >
+            Home
+          </Button>
+        </Link>
+        <Link href="/about">
+          <Button
+            variant="default"
+            className="w-18 h-9 hover:bg-white hover:text-black"
+          >
+            About
+          </Button>
+        </Link>
       </div>
-      <NavigationMenu className="justify-content flex">
+      <Link href="/">
+        <Button
+          variant="default"
+          className="w-18 h-9 bg-white text-black hover:bg-black hover:text-white"
+        >
+          Login
+        </Button>
+      </Link>
+      {/* <NavigationMenu className="justify-content flex">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Rules</NavigationMenuTrigger>
@@ -98,7 +86,7 @@ const Header = (props: string[]) => {
             </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>
-      </NavigationMenu>
+      </NavigationMenu> */}
     </header>
   );
 };
