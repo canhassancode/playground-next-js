@@ -1,4 +1,4 @@
-import { CardComponent } from "@/components/card";
+import { CardComponent } from "@/components/cardComponent";
 import { magicCard } from "@/lib/magicCards";
 import Link from "next/link";
 import React from "react";
