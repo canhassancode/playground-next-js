@@ -44,7 +44,7 @@ const Header = () => {
           </Button>
         </Link>
       </div>
-      <Link href="/">
+      <Link href="/login">
         <Button
           variant="default"
           className="w-18 h-9 bg-white text-black hover:bg-black hover:text-white"

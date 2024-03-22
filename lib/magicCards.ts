@@ -1,4 +1,4 @@
-export const card = [
+export const magicCard = [
   {
     name: "The One Ring",
     type: "Legendary Artifact",
@@ -7,8 +7,9 @@ export const card = [
     At the beginning of your upkeep, you lose 1 life for each burden counter on The One Ring.
     1: Put a burden counter on The One Ring, then draw a card for each burden counter on The One Ring.`,
     cost: 4,
-    power: null,
-    health: null,
+    power: 1,
+    health: 1,
+    url: "https://aetherhub.com/Card/LTR/A-The-One-Ring/0",
   },
   {
     name: "Aragorn and Arwen, Wed",
@@ -19,6 +20,7 @@ export const card = [
     cost: 4,
     power: 3,
     health: 6,
+    url: "https://aetherhub.com/Card/LTR/Aragorn-and-Arwen-Wed/287",
   },
   {
     name: "Arwen, Mortal Queen",
@@ -29,6 +31,7 @@ export const card = [
     cost: 1,
     power: 2,
     health: 2,
+    url: "https://aetherhub.com/Card/LTR/Arwen-Mortal-Queen/193",
   },
   {
     name: "Sauron, the Dark Lord",
@@ -40,6 +43,7 @@ export const card = [
     cost: 3,
     power: 7,
     health: 6,
+    url: "https://aetherhub.com/Card/LTR/Sauron-the-Dark-Lord/224",
   },
   {
     name: "Gandalf the Grey",
@@ -52,5 +56,18 @@ export const card = [
     cost: 3,
     power: 3,
     health: 4,
+    url: "https://aetherhub.com/Card/LTR/Gandalf-the-Grey/207",
+  },
+  {
+    name: "The Balrog, Durin's Bane",
+    type: "Legendary Creature — Avatar Demon",
+    description: `This spell costs less to cast for each permanent sacrificed this turn.
+    Haste
+    The Balrog, Durin's Bane can't be blocked except by legendary creatures.
+    When The Balrog dies, destroy target artifact or creature an opponent controls.`,
+    cost: 5,
+    power: 7,
+    health: 5,
+    url: "https://aetherhub.com/Card/LTR/The-Balrog-Durins-Bane/195",
   },
 ] as const;
