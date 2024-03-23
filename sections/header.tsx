@@ -13,14 +13,15 @@ const Header = () => {
             src="/logo.png"
             width={90}
             height={90}
-            className="mr-8 cursor-pointer hover:invert transition"
-            alt={""}
+            className="mr-2 cursor-pointer hover:invert transition"
+            alt={"Magic the Gathering Logo"}
           />
         </Link>
+        <div className="cursor-default mr-2">|</div>
         <Link href="/">
           <Button
             variant="default"
-            className="w-18 h-9 hover:bg-white hover:text-black"
+            className="w-15 h-8 hover:bg-white hover:text-black"
           >
             Home
           </Button>
@@ -28,20 +29,35 @@ const Header = () => {
         <Link href="/about">
           <Button
             variant="default"
-            className="w-18 h-9 hover:bg-white hover:text-black"
+            className="w-15 h-8 hover:bg-white hover:text-black"
           >
             About
           </Button>
         </Link>
       </div>
-      <Link href="/login">
-        <Button
-          variant="default"
-          className="w-18 h-9 bg-white text-black hover:bg-black hover:text-white"
+      <div className="flex flex-row justify-center items-center gap-6">
+        <Link href="/login">
+          <Button
+            variant="default"
+            className="w-15 h-8 bg-black text-white hover:bg-white hover:text-black"
+          >
+            Login
+          </Button>
+        </Link>
+        <div className="cursor-default">|</div>
+        <Link
+          href="https://github.com/canhassancode/playground-next-js"
+          target="_blank"
         >
-          Login
-        </Button>
-      </Link>
+          <Image
+            src="/github-mark-white.svg"
+            width={25}
+            height={10}
+            className={`cursor-pointer transition invert hover:invert-0`}
+            alt={"Github Repository"}
+          />
+        </Link>
+      </div>
     </header>
   );
 };

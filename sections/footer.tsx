@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-red-500 h-14 text-white">
+    <footer className="bg-red-500 h-14 text-black font-semibold">
       <div className="flex flex-row text-[0.8rem] text-center items-center justify-between h-[100%] mr-8 ml-8">
         <div>
           <span className="font-bold">The Inn:</span> Magic the Gathering
