@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Magic the Gathering: The Inn",
-  description: "Pull up a chair and enjoy some MtG",
+  description: "Pull up a chair and enjoy some Magic the Gathering.",
 };
 
 export default function RootLayout({

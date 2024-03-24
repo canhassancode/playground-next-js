@@ -6,14 +6,14 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="bg-red-500 justify-between flex items-center py-2 pr-8 pl-8 gap-4 h-14">
+    <header className="justify-between flex items-center py-2 pr-8 pl-8 gap-4 h-20">
       <div className="flex jutify-start gap-4 items-center">
         <Link className="cursor-pointer" href="/">
           <Image
             src="/logo.png"
             width={90}
             height={90}
-            className="mr-2 cursor-pointer hover:invert transition"
+            className="mr-2 cursor-pointer hover:box-shadow-md hover:scale-110 transition"
             alt={"Magic the Gathering Logo"}
           />
         </Link>
@@ -21,7 +21,7 @@ const Header = () => {
         <Link href="/">
           <Button
             variant="default"
-            className="w-15 h-8 hover:bg-white hover:text-black"
+            className="w-15 h-8 border bg-black text-white hover:bg-white hover:text-black"
           >
             Home
           </Button>
@@ -29,7 +29,7 @@ const Header = () => {
         <Link href="/about">
           <Button
             variant="default"
-            className="w-15 h-8 hover:bg-white hover:text-black"
+            className="w-15 h-8 border bg-black text-white hover:bg-white hover:text-black"
           >
             About
           </Button>
@@ -39,7 +39,7 @@ const Header = () => {
         <Link href="/login">
           <Button
             variant="default"
-            className="w-15 h-8 bg-black text-white hover:bg-white hover:text-black"
+            className="w-15 h-8 border bg-black text-white hover:bg-white hover:text-black"
           >
             Login
           </Button>
@@ -53,7 +53,7 @@ const Header = () => {
             src="/github-mark-white.svg"
             width={25}
             height={10}
-            className={`cursor-pointer transition invert hover:invert-0`}
+            className={`cursor-pointer transition invert hover:box-shadow-md hover:scale-110`}
             alt={"Github Repository"}
           />
         </Link>
