@@ -12,17 +12,17 @@ export const CardList = () => {
       className="flex flex-col items-center justify-center pt-14 mb-40"
       id="card-section"
     >
-      <div className="grid grid-flow-col gap-20 mb-24">
+      <div className="grid grid-flow-col gap-4 sm:gap-20 mb-4 sm:mb-24">
         <Link href="#card-section">
           <Button
-            className="scale-125 border-2 bg-black text-white hover:bg-white hover:text-black"
+            className="sm:scale-125 border-2 bg-black text-white hover:bg-white hover:text-black"
             variant="default"
           >
             Get Started
           </Button>
         </Link>
         <Input
-          className="bg-slate-50 scale-125 transition"
+          className="bg-slate-50 sm:scale-125 transition"
           onChange={(event) => {
             setQuery(event.target.value);
           }}

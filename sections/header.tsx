@@ -6,18 +6,19 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="justify-between flex items-center py-2 pr-8 pl-8 gap-4 h-20">
-      <div className="flex jutify-start gap-4 items-center">
+    <header className="justify-center md:justify-between flex items-center py-2 pr-8 pl-8 gap-4 h-20 mb-20 sm:mb-0">
+      <div className="flex gap-4 items-center">
         <Link className="cursor-pointer" href="/">
           <Image
             src="/logo.png"
             width={90}
             height={90}
-            className="mr-2 cursor-pointer hover:box-shadow-md hover:scale-110 transition"
+            className="invisible sm:visible mr-2 cursor-pointer hover:box-shadow-md hover:scale-110 transition"
             alt={"Magic the Gathering Logo"}
           />
         </Link>
-        <div className="cursor-default mr-2">|</div>
+      </div>
+      <div className="flex flex-row justify-center items-center gap-6">
         <Link href="/">
           <Button
             variant="default"
@@ -34,8 +35,6 @@ const Header = () => {
             About
           </Button>
         </Link>
-      </div>
-      <div className="flex flex-row justify-center items-center gap-6">
         <Link href="/login">
           <Button
             variant="default"
@@ -44,7 +43,7 @@ const Header = () => {
             Login
           </Button>
         </Link>
-        <div className="cursor-default">|</div>
+        <div className="cursor-default invisible sm:visible">|</div>
         <Link
           href="https://github.com/canhassancode/playground-next-js"
           target="_blank"
@@ -53,7 +52,7 @@ const Header = () => {
             src="/github-mark-white.svg"
             width={25}
             height={10}
-            className={`cursor-pointer transition invert hover:box-shadow-md hover:scale-110`}
+            className={`cursor-pointer transition invert hover:box-shadow-md hover:scale-110 invisible sm:visible`}
             alt={"Github Repository"}
           />
         </Link>
